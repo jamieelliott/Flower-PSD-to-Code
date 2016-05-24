@@ -1,0 +1,659 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*GENERAL STYLING HERE*/
+
+body {
+/*	max-width: 1280px;*/
+	text-align: center;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'poppins';
+}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+	/*NAV STYLINGS*/
+nav {
+	display: inline-block;
+	text-transform: uppercase;
+	
+}
+
+nav.top {
+	width:100%;
+}
+
+ul, li, a {
+	list-style: none;
+	display:inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
+
+nav.main ul li {
+	padding: 26px;
+}
+
+nav.sub-menu ul {
+	float:left;
+	margin-right: 800px;
+}
+
+nav ul li:hover {
+	color:RGB(116, 151, 93);
+}
+
+nav ul li a:hover {
+	color:RGB(116, 151, 93);
+}
+
+
+/*TEXT STYLING*/
+h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+/*LINE STYLING*/
+
+
+div.longLine {
+	height: 1px;
+	width:100%;
+	background-color: lightgrey;
+
+}
+
+
+div.mediumLine {
+	height: 1px;
+	width:60%;
+	margin:0 auto;
+	background-color: RGB(49, 50, 51);
+}
+/*REPEAT STYLING HERE*/
+	/*HEADER STYLING*/
+header {
+	background-color: black;
+}
+header ul li {
+	color: white;
+}
+	/*LOGO STYLING*/
+img.logo {
+	padding-top: 25px;
+}
+	/*NAV STYLING*/
+ul.left{
+	float:left;
+	padding-right: 5px;
+}
+
+ul.right{
+	float:right;
+
+}
+ul.left li {
+	padding-right: 8px;
+}
+ul.right li {
+	padding-left: 8px;
+}
+
+	/*WELCOME STYLING HERE*/
+.welcomeImgs figure{
+	float:left;
+	width:33.3%;
+}
+
+.welcomeImgs figure img {
+	width:250px;
+	height:125px;
+}
+figcaption {
+	text-transform: uppercase;
+}
+section.description p {
+	padding-left:50px;
+	padding-right:50px;
+	font-size: 0.1rem;
+	color:RGB(177, 178, 179);
+}
+
+/*BLOG STYLING*/
+div.blog {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+div.blogPost {
+	width:calc(50% - 15px);
+ 	float:left;
+ 	margin-right: 15px;
+
+}
+
+div.blogPost img{
+	width:100%;
+}
+
+span.number{
+	font-weight: bolder;
+	color:RGB(235, 236, 237);
+	font-size: 6rem;
+}
+span.month {
+	font-weight: bold;
+	color:RGB(143, 173, 120);
+	font-size: 0.1rem;
+	text-transform: uppercase;
+	position: absolute;
+    top: 37px;
+    right: 15px;
+}
+.date {
+	float: left;
+	position: relative;
+}
+.blogContent {
+	width:100%;
+	text-align: left;
+}
+
+/*FOOTER STYLING HERE*/
+footer {
+	background-image: url(assets/About/footer_bg.jpg);
+	background-size: cover;
+	background-image: no-repeat;
+}
+
+.row {
+	float:left;
+	width:33.3%;
+	padding-top: 50px;
+	text-align: center;
+}
+
+h6 {
+	text-transform: uppercase;
+	color:white;
+	text-align: center;
+}
+
+section.aboutUs img {
+	width:30%;
+}
+
+section.row p {
+	color: RGB(130, 131, 132);
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.social a i {
+	font-size: 0.2rem;
+	color:white;
+}
+
+.social a i:hover {
+	color:grey;
+}
+ ul.footer li {
+ 	display: block;
+ 	color: RGB(130, 131, 132);
+ }
+
+ ul.footer {
+ 	margin-left:0;
+ 	padding:0;
+ }
+
+ input.email {
+ 	text-align: center;
+ 	width: 229px;
+ }
+
+input.submit {
+	text-align: center;
+	background-color: yellow;
+	text-transform: uppercase;
+	color:black;
+	width:90px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+/*BANNER STYLING HERE*/
+section.banner {
+	background-image: url(assets/Home/plants_wide.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 100%;
+	position: absolute;
+}
+
+.overlayBanner {
+	background-color: RGBA(116, 151, 93, 0.5);
+	height: 200px;
+	width: 100%;
+	position: relative;
+}
+
+div.overlayBanner h1, div.overlayBanner h1{
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 79px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin:0;
+}
+
+nav.subMenu {
+	text-align: left;
+}
+/*HOMEPAGE STYLING HERE*/
+
+.heroImg {
+	background-image: url(assets/Home/plant_hero.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.overlay h2 {
+	color:white;
+	font-weight: lighter;
+
+}
+.overlay img {
+	padding-top:100px;
+}
+/*BUTTON STYLING*/
+
+div.buttons {
+
+}
+button {
+	float:left;
+	border:none;
+	background: none;
+	text-transform: uppercase;
+	margin-bottom:100px;
+
+}
+
+button.products {
+	background-color: black;
+	color: white;
+	padding:3px;
+	width:125px;
+	margin-right:5px;
+}
+
+button.seeAll {
+	background-color: yellow;
+	padding:3px;
+	width: 60px;
+}
+	/*FEATURED ITEMS STYLING*/
+	section.featured  {
+		background-color: RGB(240, 241, 242);
+		/*position: relative;*/
+		
+		
+	}
+	/*inner nav*/
+	nav.items li a {
+		padding-right: 15px;
+	}
+	nav.items li a:hover {
+		color: RGB(143, 173, 120);
+	}
+	/*imgs*/
+	div.galleryFeatured figure img {
+		width: 100%;
+
+		
+}
+	div.galleryFeatured {
+		width:50%;
+		height:600px;
+	}
+	
+	div.column {
+		width:calc(25% - 10px);
+		float: left;
+		margin-right: 10px;
+	}
+
+	figcaption a:hover {
+		background-color: RGB(116, 151, 93);
+		color:white;
+		width:100%;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+/*working with second box and img*/
+	div.france {
+		border: 5px solid white;
+		width:50%;
+		text-align: left;
+		float:left;
+		position: relative;
+		height: 500px;
+	}
+	img.group {
+		position: absolute;
+		height: 400px;
+		width: 597px;
+		margin-left: 38px;
+	}
+	div.column figure a {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	h3 {
+		font-weight: normal;
+		color: black;
+		text-transform: uppercase;
+		margin:0;
+		padding:0;
+		font-size: 20px;
+	}
+	h3 span {
+		font-weight: bold;
+		color:RGB(129, 162, 93);
+	}
+/*NEW ARRIVALS*/
+div.arrivals {
+	float:left;
+}
+div.imgLeft {
+	float:left;
+	width:50%;
+}
+div.imgRight {
+ 	float:left;
+ 	width:50%;
+}
+img.bigger {
+	width:100%;
+	height:316px;
+}
+div.imgRight img.plants {
+	width:50%;
+	float: left;
+}
+div.imgLeft img.small {
+	width:50%;
+	float:left;
+}
+
+.small {
+
+}
+
+/*LIFE OF FARM BANNER*/
+section.lifeOfFarm {
+	background-image: url(assets/Home/plants_wide.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+section.lifeOfFarm {
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+
+
+/*Vintage icons*/
+.vintage {
+	background-color: RGB(240, 241, 242);
+
+}
+
+.brands img {
+	width:calc(20% - 60px);
+	display: inline-block;
+	margin: 0 30px;
+/*	float:left;*/
+}
+/*HOMEPAGE STYLING ENDS HERE*/
+
+/*ABOUT STYLING BEGINS HERE*/
+	/*about photo section styling here*/
+	.aboutPhoto figure img {
+		position: relative;
+	}
+
+	.aboutPhoto figcaption p a {
+		position: absolute;
+	    background-color: white;
+	    text-decoration: underline;
+	    color: RGB(116, 151, 93);
+	    margin-left: -417px;
+	    margin-top: -109px;
+	    font-size: 1.5rem;
+	    text-transform: capitalize;
+	    width: 371px;
+	    text-align: left;
+	    padding: 15px;
+	}
+	/*services section styling here*/
+	.box1 {
+		background-image: url(assets/bg_logo_left.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.box2, .box3 {
+		background-color: RGB(245, 245, 245);
+	}
+	.box4 {
+		background-image: url(assets/bg_logo_right.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	section.services {
+		display:block;
+		width:100%;
+		height:300px;
+		text-align: center;
+	}
+
+	div.service {
+		width:25%;
+		text-align: center;
+		float:left;
+		display: block;
+	}
+
+
+	svg.icon {
+		width:100px;
+		height:100px;
+		padding-top: 50px;
+	}
+
+	.service:hover {
+		fill:white;
+		background-color: RGBA(203, 215, 94, 0.5);
+
+	}
+
+	span.service {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: RGB(116, 151, 93);
+
+	}
+	.seervies span:hover {
+		color:white;
+	}
+
+	.testimony {
+		background-image: url(assets/About/flower_pots.jpeg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width:100%;
+	}
+	blockquote {
+		font-size: 3.5rem;
+		color:white;
+		font-weight: lighter;
+		padding-top: 50px;
+	}
+
+	.person p {
+		background-color: black;
+		color: white;
+		width:100px;
+		text-transform: uppercase;
+		margin: 0 auto;
+		font-style: italic;
+	}
+	div.person span {
+		color: white;
+	}
+
+
+
+	/*instagram gallery styling here*/
+.instaGallery {
+	width:100%;
+	position: relative;
+	
+}
+.instaGallery img {
+	width: 12.3%;
+	padding:0;
+	margin:0;
+	position: relative;
+}
+
+div.follow a{
+	background-color: black;
+	color:white;
+	text-transform: uppercase;
+	width:175px;
+	position: absolute;
+	margin-left: -443px;
+    margin-top: -185px;
+}
+
+div.insta a {
+	background-color: yellow;
+	color: black;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 319px;
+}
+
+/*hover styling here*/
+	.box2:hover, .box3:hover {
+		background-image: url(assets/About/hover_image.jpeg);
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+/*ABOUT STYLING ENDS HERE*/
+
+/*CONTACT STYLING BEGINS HERE*/
+/*Contact Info Section*/
+div.garden {
+	background-image: url('assets/contact/garden-way.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+
+}
+
+.contact {
+	background-color: white;
+	float:left;
+	margin-top: -300px;
+	margin: 0 auto;
+	display: inline-block;
+	height:110px;
+	padding:10px;
+}
+
+.contact img {
+	width:50px;
+	height: 50px;
+}
+
+
+.contactInfo {
+	position: absolute;
+    margin-top: -110px;
+    display: block;
+    width: 33.3%;
+    margin-left: 500px;
+}
+
+.contactForm {
+	width:100%;
+}
+
+/*contact form section*/
+
+
+.contactImg {
+	width:50%;
+	 float: left;
+}
+
+.contactForm form {
+	display: flex;
+	flex-direction: column;
+	text-transform: uppercase;
+}
+
+.contactForm form:first-child {
+	text-align: center;
+}
+
+.contactHeading p {
+	text-transform: lowercase;
+}
+
+.contactButton {
+	background-color: RGB(128, 160, 94);
+	color:white;
+	outline: none;
+	box-shadow: none;
+	width:100px;
+	margin:0 auto;
+}
+
+.formFill {
+	background-color: RGB(244, 245, 246);
+	outline: none;
+}
+
+form label {
+	font-weight: bold;
+}
+
+.formMap {
+	padding-bottom: 100px;
+}
+
+
+/*CONTACT STYLING ENDS HERE*/
+
+
